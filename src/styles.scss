@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+a.title {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.title-card {
+  width: 80vw;
+  height: 50vh;
+  margin: 10%;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
