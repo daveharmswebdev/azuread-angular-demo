@@ -21,9 +21,15 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AzureDemoService } from './azure-demo.service';
 import { ReportsComponent } from './reports/reports.component';
+import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, ReportsComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    ProfileComponent,
+    ReportsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -38,7 +44,7 @@ import { ReportsComponent } from './reports/reports.component';
       new PublicClientApplication({
         auth: {
           clientId: '72f77d5e-68f5-484d-9402-1885564b031f',
-          redirectUri: 'http://localhost:4200',
+          redirectUri: environment.redirectUri,
           authority:
             'https://login.microsoftonline.com/f209ab54-b188-4828-a9c1-780534c2fd9f',
         },

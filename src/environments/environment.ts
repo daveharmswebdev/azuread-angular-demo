@@ -1,4 +1,5 @@
 export const environment = {
   production: false,
-  postLogoutUrl: 'http://localhost:4200',
+  postLogoutUrl: 'https://azurengdemostorage.z19.web.core.windows.net/',
+  redirectUri: 'https://azurengdemostorage.z19.web.core.windows.net/',
 };
